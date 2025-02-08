@@ -47,16 +47,28 @@ bash
 Copy
 Edit
 python app.py  
+
 Usage
+
 Launch the web app by navigating to http://127.0.0.1:5000/ in your browser.
+
 Upload a chest X-ray image.
+
 View the prediction result (Pneumonia or Normal).
+
 Results
+
 The model achieved an accuracy of 79.37% on the test dataset, with the following metrics:
+
 Precision: 0.8124
+
 Recall: 0.7892
+
 F1-Score: 0.8006
+
 Loss during testing: 1.6562
+
 Contributing
+
 Contributions are welcome! If you have any suggestions or want to improve this project, please feel free to open a pull request or issue.
 
