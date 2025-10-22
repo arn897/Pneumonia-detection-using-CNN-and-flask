@@ -23,7 +23,7 @@ st.write(
 @st.cache_resource
 def load_model():
     # Construct a path relative to app.py
-    model_path = os.path.join(os.path.dirname(__file__), "models", "pneumonia_model.h5")
+    model_path = os.path.join(os.path.dirname(__file__), "models", "pneumonia_model.keras")
     
     model = tf.keras.models.load_model(model_path)
     
@@ -32,7 +32,6 @@ def load_model():
     model.predict(dummy_input)
     
     return model
-
 model = load_model()
 
 # ----------------------------
@@ -75,5 +74,6 @@ if uploaded_file is not None:
             "⚠️ Prediction is uncertain! The probability is close to 50%. "
             "Consider retesting or consulting a medical professional."
         )
+
 
 
