@@ -3,7 +3,7 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 from PIL import Image
-
+import os
 # ----------------------------
 # Streamlit page configuration
 st.set_page_config(
@@ -75,4 +75,5 @@ if uploaded_file is not None:
             "⚠️ Prediction is uncertain! The probability is close to 50%. "
             "Consider retesting or consulting a medical professional."
         )
+
 
