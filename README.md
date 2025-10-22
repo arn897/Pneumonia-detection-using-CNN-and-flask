@@ -1,74 +1,121 @@
-# Pneumonia-detection-using-CNN-and-flask
-This project demonstrates a machine learning-based approach to detect pneumonia from chest X-ray images using a Convolutional Neural Network (CNN). The application is built with Flask for deploying the model as a web service.
+🩺 Pneumonia Detection using CNN and Streamlit
 
-Overview
+This project demonstrates a deep learning-based approach to detect pneumonia from chest X-ray images using a Convolutional Neural Network (CNN).
+The trained model is deployed as an interactive Streamlit web app, allowing users to upload X-ray images and get real-time predictions.
 
-Pneumonia is a severe respiratory condition that requires timely detection and treatment. This project leverages deep learning techniques to classify chest X-rays into pneumonia-positive or pneumonia-negative categories.
+🔗 Live Demo: Pneumonia Detection App
 
-Features
+🚀 Overview
 
-Model:
-Trained using a Convolutional Neural Network (CNN) architecture.
+Pneumonia is a critical lung infection that requires early and accurate diagnosis.
+This project leverages TensorFlow/Keras CNN models to classify X-ray images as Pneumonia or Normal, and provides an easy-to-use web interface for medical analysis or educational use.
 
-Web Interface:
-Built using Flask to allow users to upload X-ray images and view predictions.
+🧠 Features
+🧩 Model
 
-Performance:
-Accuracy: 0.7937
-Loss: 1.6562
-Precision: 0.8124
-Recall: 0.7892
-F1-Score: 0.8006
+Built using Convolutional Neural Network (CNN) architecture.
 
-Tools and Technologies Used
+Trained on a publicly available chest X-ray dataset.
+
+Saved in .keras format for TensorFlow 2.x compatibility.
+
+💻 Web Interface
+
+Built using Streamlit for fast and elegant deployment.
+
+Users can upload X-ray images and get immediate predictions.
+
+Displays prediction probability and class label (Pneumonia / Normal).
+
+📊 Performance (Test Metrics)
+Metric	Score
+Accuracy	79.37%
+Precision	0.8124
+Recall	0.7892
+F1-Score	0.8006
+Loss	1.6562
+🧰 Tools and Technologies Used
 
 Programming Language: Python
-Deep Learning Framework: TensorFlow/Keras
-Web Framework: Flask
+
+Deep Learning Framework: TensorFlow / Keras
+
+Web Framework: Streamlit
+
 Data Visualization: Matplotlib, Seaborn
-Dataset: Publicly available chest X-ray dataset
 
-Methodology
+Dataset: Public Chest X-ray Dataset (Kaggle)
 
-Data Preprocessing:
-Image resizing, normalization, and augmentation techniques applied to improve generalization.
+⚙️ Methodology
 
-Model Architecture:
+Data Preprocessing
 
-A custom CNN model designed with multiple convolutional layers, pooling layers, and dense layers.
-Training:
-The model was trained using a binary cross-entropy loss function and optimized using Adam optimizer.
-Evaluation:
-Metrics such as accuracy, precision, recall, and F1-score were calculated on the test dataset.
-Installation
- 
-Run the Flask app:
-bash
-Copy
-Edit
-python app.py  
+Image resizing (120×120), normalization, and augmentation.
 
-Usage
+Balanced dataset to prevent model bias.
 
-Launch the web app by navigating to http://127.0.0.1:5000/ in your browser.
+Model Architecture
+
+Multiple convolutional and pooling layers.
+
+Fully connected dense layers for classification.
+
+Activation: ReLU and Sigmoid for binary output.
+
+Training
+
+Loss Function: Binary Cross-Entropy
+
+Optimizer: Adam
+
+Epochs: Tuned for best validation accuracy.
+
+Evaluation
+
+Metrics: Accuracy, Precision, Recall, and F1-score.
+
+🧪 Installation and Usage
+1️⃣ Clone the Repository
+git clone https://github.com/<your-username>/pneumonia-detection-using-cnn-and-flask.git
+cd pneumonia-detection-using-cnn-and-flask
+
+2️⃣ Install Dependencies
+pip install -r requirements.txt
+
+3️⃣ Run the Streamlit App
+streamlit run app.py
+
+4️⃣ Usage
 
 Upload a chest X-ray image.
 
-View the prediction result (Pneumonia or Normal).
+View prediction result (Pneumonia / Normal) instantly.
 
-Results
+📈 Results
 
-The model achieved an accuracy of 79.37% on the test dataset, with the following metrics:
+The final CNN model achieved strong classification performance:
 
-Precision: 0.8124
+Accuracy: 79.37%
 
-Recall: 0.7892
+F1-Score: 0.80
 
-F1-Score: 0.8006
+Loss: 1.65
 
-Loss during testing: 1.6562
+Model File: models/pneumonia_model.keras
 
-Contributing
+🤝 Contributing
 
-Contributions are welcome! If you have any suggestions or want to improve this project, please feel free to open a pull request or issue.
+Contributions are always welcome!
+Feel free to:
 
+Improve the model or web UI
+
+Add Grad-CAM or explainability visualizations
+
+Optimize inference speed
+
+Submit a pull request or open an issue anytime.
+
+🧾 License
+
+This project is open-source and available under the MIT License.
