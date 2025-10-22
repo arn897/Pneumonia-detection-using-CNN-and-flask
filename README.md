@@ -3,7 +3,8 @@
 This project demonstrates a deep learning-based approach to detect pneumonia from chest X-ray images using a Convolutional Neural Network (CNN).
 The trained model is deployed as an interactive Streamlit web app, allowing users to upload X-ray images and get real-time predictions.
 
-🔗 Live Demo: Pneumonia Detection App
+🔗 Live Demo: [Pneumonia Detection App](https://pneumonia-detection-using-cnn-and-flask-j3yxdj7lawzims3ohjyzfi.streamlit.app/)
+
 
 🚀 Overview
 
